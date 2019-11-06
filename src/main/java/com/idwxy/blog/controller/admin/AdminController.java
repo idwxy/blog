@@ -1,4 +1,4 @@
-package com.idwxy.blog.controller;
+package com.idwxy.blog.controller.admin;
 
 import com.idwxy.blog.Service.AdminUserService;
 import com.idwxy.blog.entity.AdminUser;
