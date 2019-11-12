@@ -19,10 +19,10 @@ public class AdminUserImpl implements AdminUserService {
         String passwordMd5 = MD5Util.MD5Encode(password, "UTF-8");
         return adminUserMapper.login(userName, password);
     }
-    
+
     @Override
     public AdminUser getUserDetailById(Integer loginUserId) {
-        return null;
+        return adminUserMapper.selectByPrimaryKey(loginUserId);
     }
 
     @Override
