@@ -66,6 +66,8 @@ public class AdminController {
         if (adminUser == null) {
             return "admin/login";
         }
+        request.setAttribute("path", "profile");
+        request.setAttribute("userName", adminUser.getUserName());
         return "admin/profile";
     }
 
